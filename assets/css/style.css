@@ -8,7 +8,9 @@ body {
     width: 100%;
     height: 1000px;
 }
-
+header {
+    height: 100vh;
+}
 .nav {
     width: 100%;
     height: 65px;
@@ -16,6 +18,7 @@ body {
     line-height: 65px;
     text-align: center;
     top: 0;
+    z-index: 1;
 }
 
 .nav div.logo {
@@ -87,22 +90,21 @@ body {
 .profil {
     display: flex;
     justify-content: space-around;
-    padding-top: 200px;
 }
 
 .work {
-    background-color: rgba(0, 0, 0, 0.381);
+    background-color: rgba(0, 26, 255, 0.295);
     color: white;
     padding-inline: 15px;
     border-radius: 15px;
     text-align: center;
     width: 300px;
-
+    border: solid 2px rgb(0, 0, 56);
 }
 
 .photo {
-    width: 300px;
-    height: 300px;
+    width: 280px;
+    height: 280px;
     border-radius: 50%;
 }
 
@@ -113,7 +115,7 @@ body {
 }
 
 #downCV {
-    background-color: #101957;
+    background-color: #0c1d88;
     border-radius: 10px;
     width: 200px;
     height: 30px;
@@ -121,31 +123,65 @@ body {
 
 .listicon {
     display: flex;
-    width: 260px;
-    justify-content: space-around;
-    z-index: -1;
-
-    >div {
-        margin: 0;
-
-        >p {
-            font-size: 11px;
-            text-align: center;
-            font-weight: bold;
-            margin-bottom: 0;
-            color: white
-        }
-
-        >img {
-            width: 30px;
-            border-radius: 50%;
-            display: block;
-            height: auto;
-            margin-inline: auto;
-            -webkit-box-reflect: below -5px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.28));
-        }
+    width: 300px;
+    -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.219));
+    
     }
+    
+    .test {
+        border: solid 2px #fefeff;
+        width: 32px;
+        height: 32px;
+    background-color: rgba(9, 2, 89, 0.911);
+    border-radius: 50%;
+    margin-inline: auto;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    transition: transform 1s, scale 1s;
 }
+.present {
+    font-weight: bold;
+    font-size: medium;
+    color: aliceblue;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.auto {
+    font-size: 11px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    left: 0;
+    width: 32px;
+    height: auto;
+    text-align: center;
+    cursor: pointer;
+}
+
+.img {
+    width: 33px;
+    display: initial;
+    height: auto;
+    margin-left: auto;
+    background-size: cover;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.test:hover{
+    transform: rotateY(180deg);
+scale: 1.35;
+}
+
+
+
+
+
 
 /* Media qurey section */
 
@@ -159,14 +195,15 @@ body {
     .profil {
         flex-direction: column;
         align-items: center;
-        padding-top: 80px;
+        padding-top: 60px;
     }
 
     .work {
         order: 1;
         font-size: x-large;
-        margin-bottom: 10px;
-        margin-top: 60px;
+        margin-bottom: 30px;
+        margin-top: 40px;
+        width: 340px;
     }
 
     #downCV {
@@ -175,12 +212,12 @@ body {
 
     .photo {
         order: 3;
-        margin-bottom: 40px;
+        margin-bottom: 60px;
     }
 
     .listicon {
         order: 2;
-        margin-bottom: 50px;
+        margin-bottom: 55px;
     }
 
     .text {
@@ -223,7 +260,7 @@ body {
         text-align: center;
         width: 100%;
         font-size: 1.5rem;
-        padding: 20px;
+        padding-right: 20px;
     }
 
     .nav div.media_button {
@@ -247,7 +284,7 @@ body {
 }
 
 .navTrigger i {
-    background-color: #ffffff;
+    background-color: white;
     border-radius: 2px;
     content: '';
     display: block;
@@ -446,6 +483,6 @@ body {
 
 .affix {
     padding: 0;
-    background-color: #101957;
+    background-color: #0d1c7e;
     line-height: 61px;
 }
