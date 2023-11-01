@@ -61,4 +61,3 @@ for (i = 0; i < icon.length; i++) {
             textest.style.fontSize = '16px'
         }
     }
-   
