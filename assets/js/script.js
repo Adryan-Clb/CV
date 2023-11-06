@@ -126,6 +126,6 @@ window.onclick = function (event) {
 
 function sendEmail() {
     var subject = document.getElementById("emailSubject").value;
-    window.location.href = "mailto:example@example.com?subject=" + subject;
+    window.location.href = "mailto:adryancolombo@gmail.com?subject=" + subject;
     modal.style.display = "none";
 }
