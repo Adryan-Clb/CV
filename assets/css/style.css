@@ -617,21 +617,13 @@ footer>div>p {
 
 .modal {
     display: none;
-    /* Hidden by default */
     position: fixed;
-    /* Stay in place */
     z-index: 1;
-    /* Sit on top */
-    left: 0;
     top: 0;
     width: 100%;
-    /* Full width */
     height: 100%;
-    /* Full height */
     overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.568);
 }
 
 .modal-content {
@@ -646,6 +638,7 @@ footer>div>p {
     animation-fill-mode: forwards;
     position: relative;
     top: -300px;
+    border-radius: 15px;
 }
 
 .modal-content>div>p {
@@ -654,7 +647,6 @@ footer>div>p {
     padding: 15px 10px;
 }
 
-/* Add animation */
 @keyframes modalopen {
     from {
         top: -300px;
@@ -665,22 +657,46 @@ footer>div>p {
     }
 }
 
-/* The Close Button */
 .close {
     color: #ff0000;
     font-size: 28px;
     float: right;
     line-height: 20px;
     font-weight: bold;
-    margin-right: 5px;
+    margin-right: 8px;
+    cursor: pointer;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
+    text-shadow: 0 0 5px rgba(240, 248, 255, 0.616), 0 0 10px rgba(240, 248, 255, 0.557), 0 0 15px rgba(241, 3, 35, 0.45);
     text-decoration: none;
-    cursor: pointer;
+    
 }
+.object {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+#emailSubject {
+    font-size: 15px;
+    text-align: center;
+    font-weight: bold;
+    padding: 3px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.modal-content>div>button {
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:aliceblue;
+    border: solid 1px;
+    border-radius: 10px;
+}
+
 
 @media screen and (max-width:839px) {
     .containerArt {
